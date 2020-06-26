@@ -1,5 +1,4 @@
 .btn {
-
   &,
   &:link {
     display: inline-block;
@@ -10,10 +9,10 @@
     border-radius: $default-border-radius;
     background-color: var(--color-base-dark, #616161);
     color: var(--color-brand-snow, $color-white);
-    font-size: $default-font-size;
-    font-weight: bold;
+    font-weight: $heavy-weight;
     line-height: 1rem;
     text-decoration: none;
+    font-family: var(--default-font-family);
     cursor: pointer;
 
     &:hover {
@@ -34,7 +33,6 @@
     &:hover {
       background-color: var(--color-base-xdark, #212121);
     }
-
   }
 
   &--ghost {
@@ -54,5 +52,4 @@
     padding: 1.5rem 2rem;
     font-size: 1.25rem;
   }
-
 }

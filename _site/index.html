@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/style.css" />
-    <title>Test</title>
-  </head>
-  <body class="theme--sv grid-container">
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <title>Whitelabel Preview</title>
+</head>
+
+<body class="theme--sv grid-container">
+  <header class="header">
   <div class="header-content">
     <div class="logo">
       <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"
@@ -148,10 +150,121 @@
 </header>
 
 
-    <div class="hero"></div>
-    <div class="qqc"></div>
+  <main class="full">
+    <div class="hero">
+  <h1 class="h1">Get a quote</h1>
+  <p class="hero-copy">
+    Simple and flexible travel insurance designed by travelers for travelers.
+  </p>
+  <p>
+    Like you, travel is in our blood and exploring is our way of life. Our
+    mission is to help you get the most out of your adventures and support you
+    when things go wrong.
+  </p>
+</div>
+ <form class="qqc">
+  <fieldset class="radio-group">
+    <div class="radio-item">
+        <input type="radio" id="single" value="single trip" class="radio-input" name="trip" />
+        <label for="single" class="radio-label">
+            <span class="radio-button"></span>
+            Single trip
+        </label>
+    </div>
 
-    <footer class="footer">
+    <div class="radio-item">
+        <input type="radio" id="annual" value="multi trip" class="radio-input" name="trip" />
+        <label for="annual" class="radio-label">
+            <span class="radio-button"></span>
+            Annual trip
+        </label>
+    </div>
+</fieldset>
+  <select class="select">
+    <option>Australia</option>
+    <option>New Zealand</option>
+</select>
+  <fieldset>
+    <legend class="legend-caption">When are you traveling?</legend>
+    <div class="layout">
+        <div class="layout-item">
+            <div class="input input-field">
+                <input class="input" id="return-date" type="date" value="" />
+                <label for="return-date" class="input-label"></label>
+            </div>
+        </div>
+
+
+        <div class="layout-item">
+            <div class="input input-field">
+                <input class="input" id="departure-date" type="date" value="" />
+                <label for="departure-date" class="input-label">
+                </label>
+            </div>
+        </div>
+    </div>
+</fieldset>
+  <fieldset class="radio-group">
+    <legend class="legend-caption">How many people are traveling?</legend>
+    <div class="radio-item">
+        <input type="radio" id="one" value="1" class="radio-input" name="travelers" />
+        <label for="one" class="radio-label">
+            <span class="radio-button"></span>
+            1
+        </label>
+    </div>
+
+    <div class="radio-item">
+        <input type="radio" id="twopeople" value="2" class="radio-input" name="travelers" />
+        <label for="twopeople" class="radio-label">
+            <span class="radio-button"></span>
+            2
+        </label>
+    </div>
+
+    <div class="radio-item">
+        <input type="radio" id="family" value="family" class="radio-input" name="travelers" />
+        <label for="family" class="radio-label">
+            <span class="radio-button"></span>
+            Family
+        </label>
+    </div>
+</fieldset>
+
+
+  <fieldset>
+    <legend class="legend-caption">How old is the traveler?</legend>
+    <div class="input input-field u-one-third">
+        <input class="input" id="traveler-age" type="number" value="" />
+        <label for="traveler-age" class="input-label"></label>
+
+
+    </div>
+</fieldset>
+  <fieldset class="checkbox-group">
+    <legend class="legend-caption">Do you have private medical insurance?</legend>
+    <div class="checkbox">
+        <div class="checkbox-item">
+            <input id="private-insurance" type="checkbox" class="checkbox-input" />
+
+            <label for="private-insurance" class="checkbox-label">
+                <span class="checkbox-button">
+                    <svg viewBox="0 0 10 10" width="100%" focusable="false">
+                        <path d="M2,4.5l2.1,2 4,-4" fill="none" stroke="currentColor" stroke-width="1"></path>
+                    </svg>
+                </span>
+                Yes, I have private medical cover.
+            </label>
+        </div>
+    </div>
+</fieldset>
+
+  <button class="btn btn--primary">Get a price</button>
+
+
+</form>
+  </main>
+  <footer class="footer">
   <div class="footer-content">
     <div class="footer-logo logo">
       <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"
@@ -290,21 +403,27 @@
     </div>
 
     <p class="footer-copy">
-      nib Travel Insurance Distribution Pty Limited, ABN 40 129 262 175, AR 336467 is an authorised representative of nib Travel Services (Australia) Pty Ltd, ABN 81 115 932 173, AFSL 308461. This is general advice and you should consider if this product suits your needs. Before you buy, please read the Product Disclosure Statement available from us. <br> This insurance is underwritten by XL Insurance Company SE, Australia branch (ABN 36 083 570 441). <br>
-      *The discount applies to the nib travel insurance premium (including GST and stamp duty) for customers that currently hold a health insurance product, an Overseas Student Health Cover product or an Overseas Visitors Health Cover product with nib. The discount offer is correct at time of publication.
+      nib Travel Insurance Distribution Pty Limited, ABN 40 129 262 175, AR 336467 is an authorised representative of
+      nib Travel Services (Australia) Pty Ltd, ABN 81 115 932 173, AFSL 308461. This is general advice and you should
+      consider if this product suits your needs. Before you buy, please read the Product Disclosure Statement available
+      from us. <br> This insurance is underwritten by XL Insurance Company SE, Australia branch (ABN 36 083 570 441).
+      <br>
+      *The discount applies to the nib travel insurance premium (including GST and stamp duty) for customers that
+      currently hold a health insurance product, an Overseas Student Health Cover product or an Overseas Visitors Health
+      Cover product with nib. The discount offer is correct at time of publication.
 
-  
+
     </p>
     <nav class="footer-nav">
       <ul class="footer-nav-list">
-          <li><a class="footer-nav-link" href="#">Privacy</a></li>
-          <span class="footer-nav-link-break">|</span>
-          <li ><a class="footer-nav-link" href="#">Terms of use</a></li>
+        <li><a class="footer-nav-link" href="#">Privacy</a></li>
+        <li class="footer-nav-link-break">|</li>
+        <li><a class="footer-nav-link" href="#">Terms of use</a></li>
       </ul>
+    </nav>
   </div>
-  </div>
- 
-</footer>
 
-  </body>
+</footer>
+</body>
+
 </html>

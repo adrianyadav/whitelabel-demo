@@ -1,0 +1,87 @@
+.grid-container {
+  // If the browser doesn’t support CSS Grid, let’s give it flexbox properties.
+  display: flex;
+  flex-wrap: wrap;
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.full {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem;
+  flex-basis: 100%;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: span 4;
+    grid-gap: 4rem;
+  }
+
+  @include respond(xs) {
+    grid-gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+.header {
+  flex-basis: 100%;
+  @supports (display: grid) {
+    grid-column: span 4;
+  }
+}
+
+.hero {
+  flex-basis: 50%;
+  // background-color: pink;
+  margin-right: 2rem;
+  @supports (display: grid) {
+    grid-column: span 2;
+    margin: 0;
+
+    @include respond(sm) {
+      grid-column: span 4;
+    }
+  }
+}
+
+.qqc {
+  flex-basis: 50%;
+  // background-color: grey;
+  margin-left: 2rem;
+  @supports (display: grid) {
+    grid-column: span 2;
+    margin: 0;
+    @include respond(sm) {
+      grid-column: span 4;
+    }
+  }
+}
+
+.footer {
+  flex-basis: 100%;
+  @supports (display: grid) {
+    grid-column: span 4;
+  }
+}
+
+.layout {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  &-item {
+    flex: 1 1 0%;
+
+    &:not(:last-child) {
+      padding-right: 0.5rem;
+
+      @include respond(sm) {
+        padding-right: 0;
+      }
+    }
+  }
+}

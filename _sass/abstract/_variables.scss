@@ -12,6 +12,9 @@
   --color-mono-grey-700: #616161;
   --color-mono-grey-800: #424242;
   --color-mono-grey-900: #212121;
+  --color-footer: #333333;
+
+  --default-font-family: 'Helvetica, sans-serif';
 }
 
 // COLOURS
@@ -35,6 +38,7 @@ $gutter-horizontal: 6rem;
 // FONT
 $default-font-size: 1rem;
 $default-font-color: var(--default-font-color);
+
 $light-weight: 100;
 $medium-weight: 300;
 $heavy-weight: 700;

@@ -1,7 +1,17 @@
 .radio {
+  &-group {
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
 
   &-item {
     display: inline-block;
+
+    @include respond(xs) {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
 
     :not(first-child) {
       margin-right: 2.5rem;
@@ -21,7 +31,6 @@
   &-label {
     position: relative;
     padding-left: 2.5rem;
-    font-size: $default-font-size;
     cursor: pointer;
   }
 
@@ -66,7 +75,6 @@
 
   // Hover state
   &-input:hover ~ &-label &-button {
-
     &:before,
     &:after {
       opacity: 1;
@@ -79,7 +87,6 @@
 
   // Focus state
   &-input:focus ~ &-label &-button {
-
     &:before,
     &:after {
       opacity: 1;
@@ -97,7 +104,6 @@
 
   // Radio button is checked and hovered, keep the inner circle white
   &-input:checked:hover ~ &-label &-button {
-
     &:after {
       background-color: $color-white;
     }

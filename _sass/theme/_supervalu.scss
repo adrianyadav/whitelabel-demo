@@ -20,11 +20,18 @@
   --color-secondary-dark: #91152a;
   --color-secondary-xdark: #810c20;
 
+  // HEADER COLOR
+  --color-header: var(--color-secondary-dark);
+
   // STATUS INDICATION COLORS
   --color-info: #3fbed0;
   --color-success: #95c35c;
   --color-warning: #f0d264;
   --color-error: #d0021b;
+
+  // FONTS
+
+  --default-font-family: 'Brix Slab';
 
   // FONT COLOURS
   --color-default-font: var(--color-mono-grey-900);

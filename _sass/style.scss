@@ -25,7 +25,11 @@
 
 @import './components/checkbox';
 
+@import './components/select';
+
 @import './components/logo';
+
+@import './components/hero';
 
 // Layout
 
@@ -33,9 +37,15 @@
 
 @import './layout/footer';
 
-@import './layout/grid';
+@import './layout/layout';
 
 @import './layout/qqc';
 
-// Theme
+// FONTS
+
+@import './base/fonts';
+
+@import './shame';
+
+// THEME
 @import './theme/theme';

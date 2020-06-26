@@ -3,18 +3,21 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ './assets/style.css' | relative_url }}" />
-    <title>Test</title>
-  </head>
-  <body class="theme--sv grid-container">
-    {% include header.html %}
 
-    <div class="hero"></div>
-    <div class="qqc"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ './assets/style.css' | relative_url }}" />
+  <title>Whitelabel Preview</title>
+</head>
 
-    {% include footer.html %}
-  </body>
+<body class="theme--sv grid-container">
+  {% include header.html %}
+
+  <main class="full">
+    {% include hero.html %} {% include qqc.html %}
+  </main>
+  {% include footer.html %}
+</body>
+
 </html>

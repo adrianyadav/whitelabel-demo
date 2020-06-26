@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--color-brand-2);
+  background-color: var(--color-footer);
   display: flex;
   flex-flow: wrap;
 
@@ -14,7 +14,11 @@
   &-content {
     margin: 0 auto;
     max-width: $md;
-    padding: 56px 33px;
+    padding: 3.5rem 2rem;
+
+    @include respond(xs) {
+      padding: 2rem 1rem;
+    }
   }
 
   &-copy {

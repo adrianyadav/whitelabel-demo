@@ -1,11 +1,9 @@
 .input {
-  width: 100%;
-
   &-label {
     display: block;
     margin-bottom: 0.5rem;
     color: var(--color-base-xdark, #212121);
-    font-size: $default-font-size;
+    font-size: var(--default-font-family)-size;
     font-weight: bold;
   }
 
@@ -19,7 +17,6 @@
     color: var(--color-default-font-helper);
   }
 
-
   // Input text
   input {
     width: 100%;
@@ -28,10 +25,14 @@
     border: $default-border var(--color-mono-grey-500);
     border-radius: $default-border-radius;
     background-color: var(--color-brand-snow, $color-white);
-    font-size: $default-font-size;
+    margin-bottom: 1rem;
 
     &:focus {
       @include default-focus-outline;
     }
+  }
+
+  &--one-third {
+    width: 33.33%;
   }
 }

@@ -1,28 +1,42 @@
 .checkbox {
+  &:not(first-child) {
+    margin-right: 2.5rem;
 
+    @include respond(xs) {
+      margin-right: 0;
+    }
+  }
+
+  &:not(last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &-group {
+    margin-bottom: 1rem;
+  }
   &-item {
     display: inline-block;
-
-    :not(first-child) {
-      margin-right: 2.5rem;
-    }
+    margin-bottom: 0.5rem;
   }
 
   // hide the input box  and put inside the pseudo ::before/after is used (radio-inputs can't be styled without pseudo elements);
   &-input {
     position: absolute;
     z-index: -1;
-    width: 1rem;
-    height: 1rem;
-    margin: 0.5rem;
+    width: 2rem;
+    height: 2rem;
     opacity: 0;
   }
 
   &-label {
     position: relative;
     padding-left: 2.5rem;
-    font-size: $default-font-size;
+    font-size: var(--default-font-family)-size;
     cursor: pointer;
+
+    @include respond(xs) {
+      display: inline-block;
+    }
   }
 
   // the circle checkbox
@@ -36,6 +50,9 @@
     transition: $default-transition;
     border: $default-border var(--color-mono-grey-500);
 
+    @include respond(xs) {
+      top: 0;
+    }
     svg {
       color: transparent;
     }
@@ -56,7 +73,6 @@
 
   // Hover state
   &-input:hover ~ &-label &-button {
-
     &:before,
     &:after {
       opacity: 1;
@@ -73,7 +89,6 @@
 
   // Show the focus state
   &-input:focus ~ &-label &-button {
-
     &:before,
     &:after {
       opacity: 1;
@@ -92,5 +107,4 @@
       opacity: 1;
     }
   }
-
 }

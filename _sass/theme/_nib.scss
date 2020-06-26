@@ -1,5 +1,4 @@
 .theme--nib {
-
   // BRAND COLORS
   --color-brand-1: #008a20;
   --color-brand-2: #ffb400;
@@ -21,14 +20,21 @@
   --color-secondary-dark: #e6a200;
   --color-secondary-xdark: #cc9000;
 
+  // HEADER COLOR
+  --color-header: var(--color-primary-dark);
+
   // STATUS INDICATION COLORS
-  --color-info: #00ABCC;
+  --color-info: #00abcc;
   --color-success: #009624;
-  --color-warning: #FFB401;
-  --color-error: #94040C;
+  --color-warning: #ffb401;
+  --color-error: #94040c;
+
+  // FONTS
+
+  --default-font-family: 'Comic Sans';
 
   // FONT COLOURS
   --color-default-font: var(--color-mono-grey-900);
   --color-default-font-helper: var(--color-mono-grey-600);
-  --color-default-font-error: #D0021B;
+  --color-default-font-error: #d0021b;
 }
