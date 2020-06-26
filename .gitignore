@@ -1,1 +1,11 @@
+_site
+.sass-cache
+.jekyll-metadata
+.users.yml
 node_modules
+staticman
+staticman.pub
+package-lock.json
+
+# Local Netlify folder
+.netlify
