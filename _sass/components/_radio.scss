@@ -1,0 +1,105 @@
+.radio {
+
+  &-item {
+    display: inline-block;
+
+    :not(first-child) {
+      margin-right: 2.5rem;
+    }
+  }
+
+  // hide the input box  and put inside the pseudo ::before/after is used (radio-inputs can't be styled without pseudo elements);
+  &-input {
+    position: absolute;
+    z-index: -1;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem;
+    opacity: 0;
+  }
+
+  &-label {
+    position: relative;
+    padding-left: 2.5rem;
+    font-size: $default-font-size;
+    cursor: pointer;
+  }
+
+  // the circle checkbox
+  &-button {
+    display: inline-block;
+    position: absolute;
+    top: -0.4rem;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    transition: $default-transition;
+    border: $default-border var(--color-mono-grey-500);
+    border-radius: 1rem;
+
+    &::before {
+      top: -0.25rem;
+      right: -0.25rem;
+      bottom: -0.25rem;
+      left: -0.25rem;
+      border: $default-border-lg var(--color-base-xdark);
+      border-radius: 50%;
+      opacity: 0;
+
+      @include pseudo;
+    }
+
+    &::after {
+      top: 50%;
+      left: 50%;
+      width: 0.75rem;
+      height: 0.75rem;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.2s;
+      border-radius: 50%;
+      opacity: 0;
+      background-color: $color-white;
+
+      @include pseudo;
+    }
+  }
+
+  // Hover state
+  &-input:hover ~ &-label &-button {
+
+    &:before,
+    &:after {
+      opacity: 1;
+    }
+
+    &:after {
+      background-color: var(--color-mono-grey-400);
+    }
+  }
+
+  // Focus state
+  &-input:focus ~ &-label &-button {
+
+    &:before,
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  // Active state
+  &-input:checked ~ &-label &-button {
+    background-color: var(--color-primary);
+
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  // Radio button is checked and hovered, keep the inner circle white
+  &-input:checked:hover ~ &-label &-button {
+
+    &:after {
+      background-color: $color-white;
+    }
+  }
+}

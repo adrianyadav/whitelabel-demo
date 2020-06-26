@@ -1,0 +1,58 @@
+.btn {
+
+  &,
+  &:link {
+    display: inline-block;
+    position: relative;
+    padding: 1rem 1.5rem;
+    transition: $default-transition;
+    border: 0;
+    border-radius: $default-border-radius;
+    background-color: var(--color-base-dark, #616161);
+    color: var(--color-brand-snow, $color-white);
+    font-size: $default-font-size;
+    font-weight: bold;
+    line-height: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-base-xdark, #212121);
+    }
+
+    &:focus {
+      @include default-focus-outline;
+    }
+  }
+
+  // BUTTON TYPES
+
+  &--primary {
+    background-color: var(--color-primary, #009623);
+    color: var(--color-brand-snow, $color-white);
+
+    &:hover {
+      background-color: var(--color-base-xdark, #212121);
+    }
+
+  }
+
+  &--ghost {
+    border: $default-border var(--color-base-xdark);
+    background: 0;
+    color: var(--color-base-xdark, #212121);
+
+    &:hover {
+      background-color: var(--color-base-xdark, #212121);
+      color: var(--color-brand-snow, $color-white);
+    }
+  }
+
+  // BUTTON SIZES
+
+  &--lg {
+    padding: 1.5rem 2rem;
+    font-size: 1.25rem;
+  }
+
+}

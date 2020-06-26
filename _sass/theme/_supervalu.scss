@@ -1,0 +1,33 @@
+.theme--sv {
+  // BRAND COLORS
+  --color-brand-1: #a71931;
+  --color-brand-2: #333333;
+  --color-brand-3: #f2f3ee;
+  --color-brand-snow: #ffffff;
+
+  // BASE COLORS
+  --color-base: var(--color-mono-grey-700);
+  --color-base-dark: var(--color-mono-grey-800);
+  --color-base-xdark: var(--color-mono-grey-900);
+
+  // PRIMARY COLORS
+  --color-primary: #3fb44a;
+  --color-primary-dark: #328e3b;
+  --color-primary-xdark: #205f26;
+
+  // SECONDARY COLORS
+  --color-secondary: #a71931;
+  --color-secondary-dark: #91152a;
+  --color-secondary-xdark: #810c20;
+
+  // STATUS INDICATION COLORS
+  --color-info: #3fbed0;
+  --color-success: #95c35c;
+  --color-warning: #f0d264;
+  --color-error: #d0021b;
+
+  // FONT COLOURS
+  --color-default-font: var(--color-mono-grey-900);
+  --color-default-font-helper: var(--color-mono-grey-600);
+  --color-default-font-error: #d0021b;
+}

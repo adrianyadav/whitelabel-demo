@@ -1,0 +1,12 @@
+// main: main.scss
+.header {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  background: var(--color-secondary-dark);
+
+  &-content {
+    margin: 0 auto;
+    width: $md;
+  }
+}

@@ -1,0 +1,16 @@
+body {
+  color: $default-font-color;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: $medium-weight;
+  line-height: 1.6;
+}
+
+.legend-label {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p {
+  color: var(--color-default-font-900);
+}

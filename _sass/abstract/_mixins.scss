@@ -1,0 +1,64 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin default-focus-outline {
+  outline: 1px solid var(--color-base-xdark, #212121);
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+//MEDIA QUERY MANAGER
+
+/*
+0-600px: xs
+600-900px: tablet portrait
+900-1200: tablet landscape
+1200-1800px:  is where our normal styles apply
+1800px: big screen
+
+*/
+
+/*
+- xs
+- sm
+- md
+- lg
+
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: $xs) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == sm {
+    @media (max-width: $sm) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == md {
+    @media (max-width: $md) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    @media (min-width: $lg) {
+      @content;
+    }
+  }
+}

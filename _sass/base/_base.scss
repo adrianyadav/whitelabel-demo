@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+// For storybook
+.sb-show-main {
+  margin: 15px;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 100%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  margin-bottom: $default-margin-bottom;
+  margin-left: 1.6rem;
+}
+
+fieldset {
+  border: 0;
+}

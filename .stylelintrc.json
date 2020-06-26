@@ -1,0 +1,7 @@
+{
+  "extends": ["stylelint-config-airbnb", "stylelint-config-property-sort-order-smacss"],
+  "rules": {
+    "number-leading-zero": "always",
+    "string-quotes": "single"
+  }
+}

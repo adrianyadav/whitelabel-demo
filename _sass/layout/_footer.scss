@@ -1,0 +1,60 @@
+.footer {
+  background-color: var(--color-brand-2);
+  display: flex;
+  flex-flow: wrap;
+
+  &-logo {
+    margin-bottom: 1.5rem;
+    margin-left: 0;
+    @include respond(md) {
+      text-align: center;
+    }
+  }
+
+  &-content {
+    margin: 0 auto;
+    max-width: $md;
+    padding: 56px 33px;
+  }
+
+  &-copy {
+    color: var(--color-mono-grey-400);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: center;
+    &-list {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+    }
+    &-link {
+      font-size: 18px;
+      line-height: 18px;
+      color: var(--color-mono-grey-400);
+      text-decoration: none;
+
+      &-break {
+        color: var(--color-mono-grey-400);
+        height: 1rem;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:first-child {
+        padding-right: 1.5rem;
+      }
+
+      &:not(first-child) {
+        padding-left: 1.5rem;
+      }
+    }
+  }
+}
