@@ -484,6 +484,7 @@ p {
           padding-right: 0; } }
 
 .qqc {
+  max-width: 600px;
   padding: 2rem;
   border: 2px solid #9aa5b1;
   border-radius: 2px; }
@@ -495,26 +496,13 @@ p {
 
 @font-face {
   font-family: 'Brix Slab';
-  src: url("../../assets/fonts/brix-slab.otf");
+  src: url("../../assets/fonts/brix-slab-regular.otf");
   font-weight: 500; }
 
 @font-face {
   font-family: 'Brix Slab';
   src: url("../../assets/fonts/brix-slab-bold.otf");
   font-weight: 700; }
-
-input::-webkit-datetime-edit {
-  color: transparent; }
-
-input:focus::-webkit-datetime-edit {
-  color: #000; }
-
-input[type='date']::-webkit-calendar-picker-indicator {
-  background-image: url(images/calendar-icon.png);
-  background-position: center;
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  color: rgba(204, 204, 204, 0); }
 
 .legend + .radio-item {
   margin-bottom: 4rem; }
